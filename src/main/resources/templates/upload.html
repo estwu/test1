@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Spring Boot file upload example</h1>
+ <div >
+  <label for="name">Exercise 1:</label>
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file" /><br/><br/>
+    <input type="submit" value="Browse file then Upload File" />
+</form>
+</div>
+<br></br>
+ <div >
+  <label for="name">Exercise 2:</label>
+<form method="GET" action="/metadata" enctype="multipart/form-data">
+ 
+    <input type="submit" value="load MetaData after Exercise 1 is finished" />
+</form>
+</div>
+<br></br>
+ <div >
+  <label for="name">Exercise 3:</label>
+<form method="GET" action="/download" >
+  	<input id="fileName" name="fileName" type="text" value=""/>
+    <input type="submit" value="download the file you entered" />
+</form>
+</div>
+</body>
+</html>
